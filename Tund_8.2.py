@@ -42,6 +42,7 @@ plt.xlabel("Mäed")
 plt.ylabel("Kõrgus (m)")
 plt.title("Maailma kõrgeimad mäed")
 
-plt.savefig('maed_statistika.png', dpi=300, bbox_inches='tight')
+plt.savefig('maed_statistika.png', dpi=300)
 
 plt.show()
+
