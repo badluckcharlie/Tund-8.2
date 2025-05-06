@@ -35,11 +35,13 @@ print(f"Madalaim mägi: {madalaim_magi} ({min_korgus} m)")
 print(f"Kogukõrgus ekspeditsiooniks: {summa} m")
 
 #visual
+
 plt.figure(figsize=(10, 6))
 plt.bar(nimed, korgused, color='blue')
 plt.xlabel("Mäed")
 plt.ylabel("Kõrgus (m)")
 plt.title("Maailma kõrgeimad mäed")
-plt.xticks(rotation=45)
-plt.tight_layout()
+
+plt.savefig('maed_statistika.png', dpi=300, bbox_inches='tight')
+
 plt.show()
